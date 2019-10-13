@@ -19,7 +19,7 @@ const makeCommit  = n =>{
     
 }
 
-makeCommit(600)
+makeCommit(900)
 
 
 
