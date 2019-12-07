@@ -9,9 +9,9 @@ const makeCommit  = n =>{
     const y = random.int(0,6);
     const DATE = moment().subtract(3,'y').add(x,'w').add(y,'d').format();
 
-    const date={
-        date:DATE
-    }
+    // const date={
+    //     date:DATE
+    // }
     console.log(DATE);
     // jsonfile.writeFile(FILE_PATH,date,()=>{
     //     simpleGit().add([FILE_PATH]).commit(DATE,{'--date': DATE},makeCommit.bind(this,--n));
