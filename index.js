@@ -9,7 +9,9 @@ const makeCommit  = n =>{
     const y = random.int(0,6);
 
     for (let i = 0; i < 54; i++) {
-        text += cars[i] + "<br>";
+        for (let i = 0; i < 54; i++) {
+            text += cars[i] + "<br>";
+          }
       }
     const DATE = moment().subtract(3,'y').add(x,'w').add(y,'d').format();
 
