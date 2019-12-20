@@ -13,7 +13,7 @@ const makeCommit  = n =>{
 
           }
       }
-    const DATE = moment().subtract(3,'y').add(x,'w').add(y,'d').format();
+    
 
     // const date={
     //     date:DATE
