@@ -9,7 +9,7 @@ const makeCommit  = n =>{
     const y = random.int(0,6);
 
     for (let i = 0; i < 54; i++) {
-        for (let j = 0; j < 6; i++) {
+        for (let j = 0; j < 6; j++) {
             text += cars[i] + "<br>";
           }
       }
