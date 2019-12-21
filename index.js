@@ -15,9 +15,9 @@ const makeCommit  = n =>{
       }
     
 
-    // const date={
-    //     date:DATE
-    // }
+    const date={
+        date:DATE
+    }
     console.log(DATE);
     // jsonfile.writeFile(FILE_PATH,date,()=>{
     //     simpleGit().add([FILE_PATH]).commit(DATE,{'--date': DATE},makeCommit.bind(this,--n));
