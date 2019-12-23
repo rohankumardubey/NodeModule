@@ -11,17 +11,18 @@ const makeCommit  = n =>{
     for (let i = 0; i < 54; i++) {
         for (let j = 0; j < 6; j++) {
             const DATE = moment().subtract(3,'y').add(x,'w').add(y,'d').format();
+            const date={
+                date:DATE
+            }
+            console.log(DATE);
+            jsonfile.writeFile(FILE_PATH,date,()=>{
+                simpleGit().add([FILE_PATH]).commit(DATE,{'--date': DATE},makeCommit.bind(this,--n));
+            });
           }
       }
     
 
-    const date={
-        date:DATE
-    }
-    console.log(DATE);
-    jsonfile.writeFile(FILE_PATH,date,()=>{
-        simpleGit().add([FILE_PATH]).commit(DATE,{'--date': DATE},makeCommit.bind(this,--n));
-    });
+
     
 }
 
