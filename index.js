@@ -5,9 +5,7 @@ const FILE_PATH='./data.json';
 const random = require('random');
 const makeCommit  = n =>{
     if(n===0) return simpleGit.push();
-    const x = random.int(0,54);
-    const y = random.int(0,6);
-
+ 
     for (let i = 0; i < 54; i++) {
         for (let j = 0; j < 6; j++) {
             const DATE = moment().subtract(3,'y').add(x,'w').add(y,'d').format();
