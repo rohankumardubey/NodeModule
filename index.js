@@ -8,7 +8,7 @@ const makeCommit  = n =>{
  
     for (let i = 0; i < 54; i++) {
         for (let j = 0; j < 6; j++) {
-            const DATE = moment().subtract(3,'y').add.add(i,'w').add(j,'d').format();
+            const DATE = moment().subtract(3,'y').add(1,'d').add(i,'w').add(j,'d').format();
             const date={
                 date:DATE
             }
