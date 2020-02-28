@@ -2,7 +2,7 @@ import os
 import time
 
 def commit(days):
-    if days<1:
+    if days<500:
         pass
     else:
         dates = f'{days} days ago'
@@ -30,4 +30,4 @@ def commit(days):
             time.sleep(1)
             return days*commit(days-1)
 
-commit(400)
+commit(750)
