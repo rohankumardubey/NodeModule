@@ -14,6 +14,9 @@ def commit(days):
             os.system('git add *')
 
             os.system('git commit --date="'+dates+'" -m "commits"')
+            os.system('git commit --date="'+dates+'" -m "updates"')
+            os.system('git commit --date="'+dates+'" -m "version change"')
+            os.system('git commit --date="'+dates+'" -m "final changes"')
             os.system('git push')
             time.sleep(1)
             return days*commit(days-1)
