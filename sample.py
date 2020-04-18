@@ -1,5 +1,5 @@
 import os
-from time import time
+import time
 
 def commit(days):
     if days<1:
