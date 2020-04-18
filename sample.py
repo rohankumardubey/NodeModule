@@ -14,4 +14,4 @@ def commit(days):
             os.system('git commit --date="'+dates+'" -m "commits"')
             return days*commit(days-1)
 
-commit(455)
+commit(700)
