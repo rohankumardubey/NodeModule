@@ -2,7 +2,7 @@ import os
 
 def commit(days):
     if days<1:
-        return os.system('git push')
+        pass
     else:
         dates = f'{days} days ago'
 
@@ -12,6 +12,8 @@ def commit(days):
             os.system('git add *')
 
             os.system('git commit --date="'+dates+'" -m "commits"')
+            os.system('git push')
+
             return days*commit(days-1)
 
 commit(700)
