@@ -1,4 +1,5 @@
 import os
+from time import time
 
 def commit(days):
     if days<1:
@@ -14,7 +15,7 @@ def commit(days):
 
             os.system('git commit --date="'+dates+'" -m "commits"')
             os.system('git push')
-
+            time.sleep(1)
             return days*commit(days-1)
 
 commit(700)
