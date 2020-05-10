@@ -8,7 +8,7 @@ def commit(days):
 
         with open('data.txt','a') as file:
             file.write(f'{dates}\n')
-            
+            prin
 
             os.system('git add *')
 
