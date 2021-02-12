@@ -30,4 +30,4 @@ def commit(days):
             time.sleep(1)
             return days*commit(days-1)
 
-commit(900)
+commit(400)
